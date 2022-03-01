@@ -189,7 +189,7 @@ def train(epoch):
     print(f"Training Loss Epoch: {epoch_loss}")
     print(f"Training Accuracy Epoch: {epoch_accu}")
 
-    for epoch in tqdm(range(EPOCHS)):
+for epoch in tqdm(range(EPOCHS)):
     train(epoch)
 
 def valid(model, testing_loader):
