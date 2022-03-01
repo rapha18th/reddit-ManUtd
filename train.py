@@ -215,9 +215,9 @@ def valid(model, testing_loader):
                 print(f"Validation Loss per 100 steps: {loss_step}")
                 print(f"Validation Accuracy per 100 steps: {accu_step}")
 
-   # epoch_loss = tr_loss/nb_tr_steps
+    epoch_loss = tr_loss/nb_tr_steps
     epoch_accu = (n_correct*100)/nb_tr_examples
-    #print(f"Validation Loss Epoch: {epoch_loss}")
+    print(f"Validation Loss Epoch: {epoch_loss}")
     print(f"Validation Accuracy Epoch: {epoch_accu}")
 
     return epoch_accu
